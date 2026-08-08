@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>创新科技 · 引领未来 — 公司产品展示</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- 导航栏 -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">
+        <span class="logo-icon">◆</span>
+        <span class="logo-text">创新科技</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero">首页</a></li>
+        <li><a href="#products">产品中心</a></li>
+        <li><a href="#features">核心优势</a></li>
+        <li><a href="#video">视频介绍</a></li>
+        <li><a href="#contact" class="nav-cta">联系我们</a></li>
+      </ul>
+      <button class="mobile-toggle" id="mobileToggle" aria-label="菜单">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero 主视觉区域 -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-shapes">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-tag">全新发布 · 2026 旗舰系列</p>
+      <h1 class="hero-title">
+        <span class="line">用科技重新定义</span>
+        <span class="line highlight">无限可能</span>
+      </h1>
+      <p class="hero-desc">我们致力于打造世界领先的智能产品，以卓越性能与精致设计，为您的生活与工作带来前所未有的变革体验。</p>
+      <div class="hero-actions">
+        <a href="#products" class="btn btn-primary">探索产品</a>
+        <a href="#video" class="btn btn-outline">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+          观看视频
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat"><span class="stat-num" data-target="500">0</span><span class="stat-plus">+</span><span class="stat-label">企业客户</span></div>
+        <div class="stat"><span class="stat-num" data-target="99">0</span><span class="stat-plus">%</span><span class="stat-label">客户满意度</span></div>
+        <div class="stat"><span class="stat-num" data-target="30">0</span><span class="stat-plus">+</span><span class="stat-label">国家与地区</span></div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-card-stack">
+        <div class="hero-card hero-card-1">
+          <div class="placeholder-img gradient-1">
+            <svg viewBox="0 0 200 150" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="200" height="150" rx="12" fill="url(#g1)"/><text x="100" y="80" text-anchor="middle" fill="white" font-size="14" font-weight="500">产品图片 1</text><defs><linearGradient id="g1" x1="0" y1="0" x2="200" y2="150"><stop stop-color="#667eea"/><stop offset="1" stop-color="#764ba2"/></linearGradient></defs></svg>
+          </div>
+        </div>
+        <div class="hero-card hero-card-2">
+          <div class="placeholder-img gradient-2">
+            <svg viewBox="0 0 200 150" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="200" height="150" rx="12" fill="url(#g2)"/><text x="100" y="80" text-anchor="middle" fill="white" font-size="14" font-weight="500">产品图片 2</text><defs><linearGradient id="g2" x1="0" y1="0" x2="200" y2="150"><stop stop-color="#f093fb"/><stop offset="1" stop-color="#f5576c"/></linearGradient></defs></svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 产品中心 -->
+  <section class="products" id="products">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">产品中心</span>
+        <h2 class="section-title">我们的明星产品</h2>
+        <p class="section-desc">每一款产品都凝聚了团队的匠心与智慧，为您带来卓越的使用体验</p>
+      </div>
+
+      <!-- 产品筛选 -->
+      <div class="filter-bar">
+        <button class="filter-btn active" data-filter="all">全部产品</button>
+        <button class="filter-btn" data-filter="smart">智能硬件</button>
+        <button class="filter-btn" data-filter="software">软件平台</button>
+        <button class="filter-btn" data-filter="service">云服务</button>
+      </div>
+
+      <!-- 产品网格 -->
+      <div class="product-grid">
+
+        <div class="product-card" data-category="smart">
+          <div class="product-image">
+            <div class="placeholder-img gradient-1">
+              <svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="300" fill="url(#p1)"/><text x="200" y="155" text-anchor="middle" fill="white" font-size="18" font-weight="500">智能终端 Pro</text><defs><linearGradient id="p1" x1="0" y1="0" x2="400" y2="300"><stop stop-color="#667eea"/><stop offset="1" stop-color="#764ba2"/></linearGradient></defs></svg>
+            </div>
+            <span class="product-badge">新品</span>
+            <button class="product-zoom" aria-label="放大图片">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </button>
+          </div>
+          <div class="product-info">
+            <h3>智能终端 Pro</h3>
+            <p>新一代旗舰智能终端，搭载自研芯片，性能卓越，续航持久，为您带来极致的智能交互体验。</p>
+            <div class="product-meta">
+              <span class="product-price">¥4,999</span>
+              <a href="#" class="product-link">了解详情 →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="software">
+          <div class="product-image">
+            <div class="placeholder-img gradient-3">
+              <svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="300" fill="url(#p3)"/><text x="200" y="155" text-anchor="middle" fill="white" font-size="18" font-weight="500">云端协作平台</text><defs><linearGradient id="p3" x1="0" y1="0" x2="400" y2="300"><stop stop-color="#4facfe"/><stop offset="1" stop-color="#00f2fe"/></linearGradient></defs></svg>
+            </div>
+            <span class="product-badge badge-hot">热门</span>
+            <button class="product-zoom" aria-label="放大图片">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </button>
+          </div>
+          <div class="product-info">
+            <h3>云端协作平台</h3>
+            <p>高效的企业级协作平台，支持实时文档编辑、项目管理与团队沟通，让远程协作如面对面般顺畅。</p>
+            <div class="product-meta">
+              <span class="product-price">¥299/月</span>
+              <a href="#" class="product-link">了解详情 →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="smart">
+          <div class="product-image">
+            <div class="placeholder-img gradient-4">
+              <svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="300" fill="url(#p4)"/><text x="200" y="155" text-anchor="middle" fill="white" font-size="18" font-weight="500">智能传感器 X1</text><defs><linearGradient id="p4" x1="0" y1="0" x2="400" y2="300"><stop stop-color="#43e97b"/><stop offset="1" stop-color="#38f9d7"/></linearGradient></defs></svg>
+            </div>
+            <button class="product-zoom" aria-label="放大图片">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </button>
+          </div>
+          <div class="product-info">
+            <h3>智能传感器 X1</h3>
+            <p>工业级高精度传感器，支持多场景数据采集，毫秒级响应，广泛应用于智能制造与物联网领域。</p>
+            <div class="product-meta">
+              <span class="product-price">¥1,299</span>
+              <a href="#" class="product-link">了解详情 →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="service">
+          <div class="product-image">
+            <div class="placeholder-img gradient-5">
+              <svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="300" fill="url(#p5)"/><text x="200" y="155" text-anchor="middle" fill="white" font-size="18" font-weight="500">AI 数据分析引擎</text><defs><linearGradient id="p5" x1="0" y1="0" x2="400" y2="300"><stop stop-color="#fa709a"/><stop offset="1" stop-color="#fee140"/></linearGradient></defs></svg>
+            </div>
+            <span class="product-badge badge-new">推荐</span>
+            <button class="product-zoom" aria-label="放大图片">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </button>
+          </div>
+          <div class="product-info">
+            <h3>AI 数据分析引擎</h3>
+            <p>基于深度学习的数据分析平台，自动识别数据模式，生成可视化报告，助力企业智慧决策。</p>
+            <div class="product-meta">
+              <span class="product-price">¥599/月</span>
+              <a href="#" class="product-link">了解详情 →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="software">
+          <div class="product-image">
+            <div class="placeholder-img gradient-6">
+              <svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="300" fill="url(#p6)"/><text x="200" y="155" text-anchor="middle" fill="white" font-size="18" font-weight="500">安全防护套件</text><defs><linearGradient id="p6" x1="0" y1="0" x2="400" y2="300"><stop stop-color="#a18cd1"/><stop offset="1" stop-color="#fbc2eb"/></linearGradient></defs></svg>
+            </div>
+            <button class="product-zoom" aria-label="放大图片">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </button>
+          </div>
+          <div class="product-info">
+            <h3>安全防护套件</h3>
+            <p>全方位网络安全解决方案，提供实时威胁检测、数据加密与合规管理，守护企业数字资产安全。</p>
+            <div class="product-meta">
+              <span class="product-price">¥899/月</span>
+              <a href="#" class="product-link">了解详情 →</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card" data-category="service">
+          <div class="product-image">
+            <div class="placeholder-img gradient-7">
+              <svg viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="400" height="300" fill="url(#p7)"/><text x="200" y="155" text-anchor="middle" fill="white" font-size="18" font-weight="500">弹性云计算服务</text><defs><linearGradient id="p7" x1="0" y1="0" x2="400" y2="300"><stop stop-color="#ffecd2"/><stop offset="1" stop-color="#fcb69f"/></linearGradient></defs></svg>
+            </div>
+            <button class="product-zoom" aria-label="放大图片">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </button>
+          </div>
+          <div class="product-info">
+            <h3>弹性云计算服务</h3>
+            <p>高性能云计算基础设施，按需弹性扩展，99.99% 可用性保障，为您的业务提供坚实底座。</p>
+            <div class="product-meta">
+              <span class="product-price">按量计费</span>
+              <a href="#" class="product-link">了解详情 →</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 核心优势 -->
+  <section class="features" id="features">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">核心优势</span>
+        <h2 class="section-title">为什么选择我们</h2>
+        <p class="section-desc">多年深耕科技领域，以实力赢得信赖</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <h3>技术领先</h3>
+          <p>拥有200+核心专利，持续研发投入，确保产品始终处于行业技术前沿。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          </div>
+          <h3>品质保障</h3>
+          <p>严格的品控体系与ISO认证，每一件产品都经过多轮严苛测试。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </div>
+          <h3>专业服务</h3>
+          <p>7×24 小时技术支持团队，专属客户经理，确保您获得最及时的专业服务。</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+          </div>
+          <h3>全球覆盖</h3>
+          <p>业务遍及30+国家和地区，全球化的服务网络为您提供本地化支持。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 视频介绍 -->
+  <section class="video-section" id="video">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">视频中心</span>
+        <h2 class="section-title">用影像讲述产品故事</h2>
+        <p class="section-desc">通过精心制作的视频，深入了解我们的每款产品</p>
+      </div>
+
+      <!-- 主视频 -->
+      <div class="video-main">
+        <div class="video-wrapper" id="mainVideoWrapper">
+          <div class="video-placeholder" id="videoPlaceholder">
+            <div class="video-placeholder-bg"></div>
+            <button class="play-btn" id="playBtn" aria-label="播放视频">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="currentColor"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            </button>
+            <p class="video-placeholder-text">点击播放产品介绍视频</p>
+          </div>
+          <!-- 替换为真实视频: 将下方 video 标签的 src 替换为您的视频链接 -->
+          <video id="mainVideo" class="video-player" controls preload="none" style="display:none;"
+            poster="">
+            <source src="" type="video/mp4">
+            您的浏览器不支持视频播放。
+          </video>
+        </div>
+      </div>
+
+      <!-- 视频列表 -->
+      <div class="video-grid">
+        <div class="video-thumb" data-video="" data-title="智能终端 Pro 发布会回顾">
+          <div class="thumb-img gradient-1">
+            <svg viewBox="0 0 320 180" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="180" fill="url(#v1)"/><text x="160" y="95" text-anchor="middle" fill="white" font-size="13" font-weight="400">发布会回顾</text><defs><linearGradient id="v1" x1="0" y1="0" x2="320" y2="180"><stop stop-color="#667eea"/><stop offset="1" stop-color="#764ba2"/></linearGradient></defs></svg>
+            <div class="thumb-play">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            </div>
+            <span class="thumb-duration">05:32</span>
+          </div>
+          <h4>智能终端 Pro 发布会回顾</h4>
+          <p>全面回顾新品发布精彩瞬间</p>
+        </div>
+        <div class="video-thumb" data-video="" data-title="云端协作平台使用教程">
+          <div class="thumb-img gradient-3">
+            <svg viewBox="0 0 320 180" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="180" fill="url(#v2)"/><text x="160" y="95" text-anchor="middle" fill="white" font-size="13" font-weight="400">使用教程</text><defs><linearGradient id="v2" x1="0" y1="0" x2="320" y2="180"><stop stop-color="#4facfe"/><stop offset="1" stop-color="#00f2fe"/></linearGradient></defs></svg>
+            <div class="thumb-play">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            </div>
+            <span class="thumb-duration">12:08</span>
+          </div>
+          <h4>云端协作平台使用教程</h4>
+          <p>手把手教你快速上手协作平台</p>
+        </div>
+        <div class="video-thumb" data-video="" data-title="AI 引擎赋能企业数字化转型">
+          <div class="thumb-img gradient-5">
+            <svg viewBox="0 0 320 180" fill="none" xmlns="http://www.w3.org/2000/svg"><rect width="320" height="180" fill="url(#v3)"/><text x="160" y="95" text-anchor="middle" fill="white" font-size="13" font-weight="400">数字化转型</text><defs><linearGradient id="v3" x1="0" y1="0" x2="320" y2="180"><stop stop-color="#fa709a"/><stop offset="1" stop-color="#fee140"/></linearGradient></defs></svg>
+            <div class="thumb-play">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="white"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            </div>
+            <span class="thumb-duration">08:45</span>
+          </div>
+          <h4>AI 引擎赋能企业数字化转型</h4>
+          <p>看 AI 如何重塑企业运营模式</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 客户评价 -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">客户评价</span>
+        <h2 class="section-title">听听客户怎么说</h2>
+      </div>
+      <div class="testimonial-slider">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"智能终端 Pro 的出色性能远超我们的预期，极大提升了团队的工作效率。售后服务也非常专业及时，值得信赖的合作伙伴。"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">张</div>
+            <div>
+              <strong>张明远</strong>
+              <span>某科技集团 CTO</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"云端协作平台彻底改变了我们的远程办公方式，团队沟通效率提升了 3 倍以上。界面简洁易用，部署也非常快捷。"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">李</div>
+            <div>
+              <strong>李雪婷</strong>
+              <span>某互联网公司 运营总监</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"AI 数据分析引擎帮助我们发现了许多之前忽略的业务洞察，数据驱动的决策让公司营收增长了 40%。强烈推荐！"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">王</div>
+            <div>
+              <strong>王建峰</strong>
+              <span>某金融企业 CEO</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 联系我们 -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <h2>与我们联系</h2>
+          <p>无论您有任何关于产品的疑问或合作意向，我们的团队都随时准备为您服务。</p>
+          <div class="contact-details">
+            <div class="contact-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <span>400-888-8888</span>
+            </div>
+            <div class="contact-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>contact@company.com</span>
+            </div>
+            <div class="contact-item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>北京市海淀区科技大道 888 号创新大厦</span>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">您的姓名</label>
+              <input type="text" id="name" placeholder="请输入姓名" required>
+            </div>
+            <div class="form-group">
+              <label for="phone">联系电话</label>
+              <input type="tel" id="phone" placeholder="请输入电话号码" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">电子邮箱</label>
+            <input type="email" id="email" placeholder="请输入邮箱地址" required>
+          </div>
+          <div class="form-group">
+            <label for="message">留言内容</label>
+            <textarea id="message" rows="4" placeholder="请输入您想了解的内容..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full">提交留言</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- 页脚 -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="logo"><span class="logo-icon">◆</span><span class="logo-text">创新科技</span></a>
+          <p>致力于用科技创新改变世界，为全球用户提供卓越的智能产品与服务。</p>
+        </div>
+        <div class="footer-links">
+          <h4>产品</h4>
+          <a href="#">智能终端 Pro</a>
+          <a href="#">云端协作平台</a>
+          <a href="#">AI 数据分析引擎</a>
+          <a href="#">弹性云计算服务</a>
+        </div>
+        <div class="footer-links">
+          <h4>公司</h4>
+          <a href="#">关于我们</a>
+          <a href="#">新闻中心</a>
+          <a href="#">加入我们</a>
+          <a href="#">合作伙伴</a>
+        </div>
+        <div class="footer-links">
+          <h4>支持</h4>
+          <a href="#">帮助中心</a>
+          <a href="#">技术文档</a>
+          <a href="#">服务条款</a>
+          <a href="#">隐私政策</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 创新科技有限公司 · 保留所有权利</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- 图片灯箱 -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="关闭">
+      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+    <div class="lightbox-content" id="lightboxContent"></div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
