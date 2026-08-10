@@ -253,7 +253,7 @@ a { text-decoration: none; color: inherit; transition: color var(--transition); 
 /* ====== 视频区域 ====== */
 .video-section { padding: 100px 0; }
 
-.video-main { margin-bottom: 100px; }
+.video-main { margin-bottom: 64px; }
 .video-wrapper {
   border-radius: var(--radius-lg); overflow: hidden;
   box-shadow: var(--shadow-lg); background: #000;
