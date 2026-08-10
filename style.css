@@ -307,7 +307,7 @@ a { text-decoration: none; color: inherit; transition: color var(--transition); 
 .video-thumb p { color: var(--text-secondary); font-size: 0.85rem; }
 
 /* ====== 联系我们 ====== */
-.contact { padding: 40px 0; }
+.contact { padding: 20px 0; }
 .contact-wrapper {
   display: grid; grid-template-columns: 1fr 1fr; gap: 60px;
   background: var(--bg-white); border-radius: var(--radius-lg);
