@@ -306,27 +306,6 @@ a { text-decoration: none; color: inherit; transition: color var(--transition); 
 .video-thumb h4 { font-size: 0.95rem; font-weight: 600; margin-bottom: 4px; }
 .video-thumb p { color: var(--text-secondary); font-size: 0.85rem; }
 
-/* ====== 客户评价 ====== */
-.testimonials { padding: 100px 0; background: var(--bg-white); }
-.testimonial-slider { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
-.testimonial-card {
-  padding: 36px; border-radius: var(--radius-md);
-  border: 1.5px solid var(--border);
-  transition: all var(--transition);
-}
-.testimonial-card:hover { box-shadow: var(--shadow-md); transform: translateY(-4px); }
-.testimonial-stars { color: #fbbf24; font-size: 1.1rem; margin-bottom: 16px; letter-spacing: 2px; }
-.testimonial-text { color: var(--text-secondary); font-size: 0.95rem; line-height: 1.8; margin-bottom: 24px; font-style: italic; }
-.testimonial-author { display: flex; align-items: center; gap: 12px; }
-.author-avatar {
-  width: 44px; height: 44px; border-radius: 50%;
-  background: var(--primary); color: #fff;
-  display: flex; align-items: center; justify-content: center;
-  font-weight: 700; font-size: 0.95rem;
-}
-.testimonial-author strong { display: block; font-size: 0.95rem; }
-.testimonial-author span { color: var(--text-light); font-size: 0.82rem; }
-
 /* ====== 联系我们 ====== */
 .contact { padding: 100px 0; }
 .contact-wrapper {
