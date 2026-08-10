@@ -96,22 +96,36 @@ document.addEventListener('keydown', (e) => {
   if (e.key === 'Escape' && lightbox.classList.contains('active')) closeLightbox();
 });
 
-// ====== 视频播放 ======
+// ====== YouTube 视频播放 ======
 const playBtn = document.getElementById('playBtn');
 const videoPlaceholder = document.getElementById('videoPlaceholder');
 const mainVideo = document.getElementById('mainVideo');
 
+// 默认主视频 YouTube ID（替换为您的 YouTube 视频 ID）
+const MAIN_YOUTUBE_ID = 'YOUR_VIDEO_ID';
+
+function loadYouTube(videoId) {
+  if (!videoId || videoId.startsWith('YOUR_VIDEO_ID')) {
+    showVideoNotice();
+    return;
+  }
+  const embedUrl = `https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0`;
+  mainVideo.src = embedUrl;
+  videoPlaceholder.style.display = 'none';
+  mainVideo.style.display = 'block';
+}
+
 if (playBtn) {
   playBtn.addEventListener('click', () => {
-    if (mainVideo.querySelector('source').src) {
-      // 有视频源时播放
-      videoPlaceholder.style.display = 'none';
-      mainVideo.style.display = 'block';
-      mainVideo.play();
-    } else {
-      // 无视频源时显示提示
-      showVideoNotice();
-    }
+    loadYouTube(MAIN_YOUTUBE_ID);
+  });
+}
+
+// 点击占位区域也可以触发播放
+if (videoPlaceholder) {
+  videoPlaceholder.addEventListener('click', (e) => {
+    if (e.target === playBtn || playBtn.contains(e.target)) return;
+    loadYouTube(MAIN_YOUTUBE_ID);
   });
 }
 
@@ -128,12 +142,11 @@ function showVideoNotice() {
         <line x1="12" y1="8" x2="12" y2="12"/>
         <line x1="12" y1="16" x2="12.01" y2="16"/>
       </svg>
-      <p>请将视频文件放置到项目目录中<br>并在 <code>index.html</code> 中配置视频路径</p>
+      <p>请在 <code>index.html</code> 或 <code>main.js</code> 中<br>配置您的 YouTube 视频 ID</p>
       <button class="video-notice-close">我知道了</button>
     </div>
   `;
 
-  // 添加内联样式
   Object.assign(notice.style, {
     position: 'fixed', inset: '0', zIndex: '9998',
     display: 'flex', alignItems: 'center', justifyContent: 'center',
@@ -163,16 +176,12 @@ function showVideoNotice() {
   notice.addEventListener('click', (e) => { if (e.target === notice) notice.remove(); });
 }
 
-// 视频缩略图点击
+// 视频缩略图点击 — 加载对应 YouTube 视频
 document.querySelectorAll('.video-thumb').forEach(thumb => {
   thumb.addEventListener('click', () => {
-    const videoSrc = thumb.dataset.video;
-    if (videoSrc) {
-      mainVideo.querySelector('source').src = videoSrc;
-      mainVideo.load();
-      videoPlaceholder.style.display = 'none';
-      mainVideo.style.display = 'block';
-      mainVideo.play();
+    const youtubeId = thumb.dataset.youtube;
+    if (youtubeId && !youtubeId.startsWith('YOUR_VIDEO_ID')) {
+      loadYouTube(youtubeId);
       document.getElementById('video').scrollIntoView({ behavior: 'smooth', block: 'start' });
     } else {
       showVideoNotice();
