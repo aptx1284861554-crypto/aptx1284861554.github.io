@@ -253,7 +253,7 @@ a { text-decoration: none; color: inherit; transition: color var(--transition); 
 /* ====== 视频区域 ====== */
 .video-section { padding: 100px 0; }
 
-.video-main { margin-bottom: 48px; }
+.video-main { margin-bottom: 64px; }
 .video-wrapper {
   border-radius: var(--radius-lg); overflow: hidden;
   box-shadow: var(--shadow-lg); background: #000;
@@ -282,7 +282,7 @@ a { text-decoration: none; color: inherit; transition: color var(--transition); 
 .video-player { width: 100%; height: 100%; object-fit: cover; }
 .youtube-player { width: 100%; height: 100%; border: none; }
 
-.video-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+.video-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 48px; }
 .video-thumb { cursor: pointer; transition: all var(--transition); }
 .video-thumb:hover { transform: translateY(-4px); }
 .thumb-img {
