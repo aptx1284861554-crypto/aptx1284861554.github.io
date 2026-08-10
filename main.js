@@ -105,7 +105,7 @@ const mainVideo = document.getElementById('mainVideo');
 const MAIN_YOUTUBE_ID = 'v=IurBXe0jpVg';
 
 function loadYouTube(videoId) {
-  if (!videoId || videoId.startsWith('YOUR_VIDEO_ID')) {
+  if (!videoId || videoId.startsWith('v=IurBXe0jpVg')) {
     showVideoNotice();
     return;
   }
@@ -117,7 +117,7 @@ function loadYouTube(videoId) {
 
 if (playBtn) {
   playBtn.addEventListener('click', () => {
-    loadYouTube(MAIN_YOUTUBE_ID);
+    loadYouTube(v=IurBXe0jpVg);
   });
 }
 
