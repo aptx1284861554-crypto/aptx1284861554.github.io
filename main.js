@@ -102,10 +102,10 @@ const videoPlaceholder = document.getElementById('videoPlaceholder');
 const mainVideo = document.getElementById('mainVideo');
 
 // 默认主视频 YouTube ID（替换为您的 YouTube 视频 ID）
-const MAIN_YOUTUBE_ID = 'v=IurBXe0jpVg';
+const MAIN_YOUTUBE_ID = '3wfwvzSYNOU';
 
 function loadYouTube(videoId) {
-  if (!videoId || videoId.startsWith('v=IurBXe0jpVg')) {
+  if (!videoId || videoId.startsWith('YOUR_VIDEO_ID')) {
     showVideoNotice();
     return;
   }
@@ -117,7 +117,7 @@ function loadYouTube(videoId) {
 
 if (playBtn) {
   playBtn.addEventListener('click', () => {
-    loadYouTube(v=IurBXe0jpVg);
+    loadYouTube(MAIN_YOUTUBE_ID);
   });
 }
 
