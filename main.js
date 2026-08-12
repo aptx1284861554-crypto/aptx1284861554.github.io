@@ -73,9 +73,9 @@ document.querySelectorAll('.product-zoom').forEach(btn => {
   btn.addEventListener('click', (e) => {
     e.stopPropagation();
     const card = btn.closest('.product-card');
-    const svg = card.querySelector('.product-image svg');
-    if (svg) {
-      lightboxContent.innerHTML = svg.outerHTML;
+   const img = card.querySelector('.product-img');
+    if (img) {
+      lightboxContent.innerHTML = `<img src="${img.src}" alt="${img.alt}" style="max-width:80vw;max-height:80vh;border-radius:16px;object-fit:contain;">`;
       lightbox.classList.add('active');
       document.body.style.overflow = 'hidden';
     }
